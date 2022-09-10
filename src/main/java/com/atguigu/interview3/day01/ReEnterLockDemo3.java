@@ -37,7 +37,7 @@ public class ReEnterLockDemo3 {
         new Thread(() -> {
             lock.lock();
             try {
-                System.out.println(Thread.currentThread().getName()+"\t"+" ----- 调用开始");
+                System.out.println(Thread.currentThread().getName() + "\t" + " ----- 调用开始");
             } finally {
                 lock.unlock();
             }
